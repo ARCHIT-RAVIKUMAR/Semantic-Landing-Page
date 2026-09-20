@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeSprint Weekend — 48-hour build event</title>
+  <meta name="description" content="A 48-hour weekend build event for students. Pick a track, build something, and demo it Sunday night.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <span class="logo">CodeSprint</span>
+      <nav aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#mentors">Mentors</a></li>
+          <li><a href="#register">Register</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="wrap hero-inner">
+        <div class="hero-copy">
+          <h1 id="hero-heading">Build something in 48 hours.</h1>
+          <p>CodeSprint Weekend is a two-day build event for students. Pick a track Friday night, build with a team, and demo what you made Sunday evening.</p>
+          <a class="btn btn-primary" href="#register">Reserve a seat</a>
+        </div>
+        <img src="assets/hero.svg" alt="Illustration of a laptop screen showing a code editor window" width="400" height="300" class="hero-image">
+      </div>
+    </section>
+
+    <section id="about" aria-labelledby="about-heading">
+      <div class="wrap">
+        <h2 id="about-heading">What this weekend actually looks like</h2>
+        <p>Teams of two to four pick one track on Friday evening, then spend Saturday and Sunday building. There's no set curriculum — mentors are around to unblock you, not to lecture. Sunday closes with five-minute demos in front of everyone.</p>
+
+        <div class="about-grid">
+          <article>
+            <h3>Who it's for</h3>
+            <p>Any student comfortable with at least one programming language. No prior hackathon experience needed.</p>
+          </article>
+          <article>
+            <h3>What you'll need</h3>
+            <p>Your own laptop and charger. We handle the rest — wifi, power strips, food, and mentor time.</p>
+          </article>
+          <article>
+            <h3>What you leave with</h3>
+            <p>A working project, a GitHub repo you can point to, and whatever your team decides to keep building after.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="schedule" aria-labelledby="schedule-heading">
+      <div class="wrap">
+        <h2 id="schedule-heading">Schedule</h2>
+
+        <h3>Friday</h3>
+        <ul class="schedule-list">
+          <li><span class="time">6:00 PM</span> Check-in and team formation</li>
+          <li><span class="time">7:00 PM</span> Track selection and kickoff</li>
+          <li><span class="time">8:00 PM</span> Building starts</li>
+        </ul>
+
+        <h3>Saturday</h3>
+        <ul class="schedule-list">
+          <li><span class="time">10:00 AM</span> Mentor office hours open</li>
+          <li><span class="time">1:00 PM</span> Team check-ins</li>
+          <li><span class="time">All day</span> Building continues</li>
+        </ul>
+
+        <h3>Sunday</h3>
+        <ul class="schedule-list">
+          <li><span class="time">12:00 PM</span> Building wraps up</li>
+          <li><span class="time">2:00 PM</span> Demos</li>
+          <li><span class="time">5:00 PM</span> Wrap-up and feedback</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="mentors" aria-labelledby="mentors-heading">
+      <div class="wrap">
+        <h2 id="mentors-heading">Mentors on the floor</h2>
+        <ul class="mentor-list">
+          <li class="mentor-card">
+            <img src="assets/avatar-1.svg" alt="Headshot of Aditi Rao" width="72" height="72">
+            <h3>Aditi Rao</h3>
+            <p>Backend and infra. Ask her about databases, deployment, or why your API keeps timing out.</p>
+          </li>
+          <li class="mentor-card">
+            <img src="assets/avatar-2.svg" alt="Headshot of Sam Kwon" width="72" height="72">
+            <h3>Sam Kwon</h3>
+            <p>Frontend and design. Good at helping a rough UI look like it belongs on the internet.</p>
+          </li>
+          <li class="mentor-card">
+            <img src="assets/avatar-3.svg" alt="Headshot of Meera Joseph" width="72" height="72">
+            <h3>Meera Joseph</h3>
+            <p>ML and data. Can help you decide whether you actually need a model or just a good if-statement.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="register" aria-labelledby="register-heading">
+      <div class="wrap">
+        <h2 id="register-heading">Reserve your seat</h2>
+        <p>Seats are limited to 120 students. Fill this in and we'll email you a confirmation.</p>
+
+        <form class="signup-form" action="#" method="post">
+
+          <div class="form-row">
+            <label for="fullname">Full name</label>
+            <input type="text" id="fullname" name="fullname" autocomplete="name" required>
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </div>
+
+          <div class="form-row">
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" aria-describedby="phone-hint">
+            <p id="phone-hint" class="field-hint">Optional — only used if a mentor needs to reach your team on the day.</p>
+          </div>
+
+          <div class="form-row">
+            <label for="track">Preferred track</label>
+            <select id="track" name="track" required>
+              <option value="">Choose a track</option>
+              <option value="web">Web development</option>
+              <option value="ml">Machine learning</option>
+              <option value="security">Cybersecurity</option>
+              <option value="mobile">Mobile apps</option>
+            </select>
+          </div>
+
+          <fieldset class="form-row">
+            <legend>Experience level</legend>
+            <div class="radio-option">
+              <input type="radio" id="level-beginner" name="level" value="beginner" checked>
+              <label for="level-beginner">Beginner</label>
+            </div>
+            <div class="radio-option">
+              <input type="radio" id="level-intermediate" name="level" value="intermediate">
+              <label for="level-intermediate">Intermediate</label>
+            </div>
+            <div class="radio-option">
+              <input type="radio" id="level-advanced" name="level" value="advanced">
+              <label for="level-advanced">Advanced</label>
+            </div>
+          </fieldset>
+
+          <div class="form-row checkbox-row">
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I agree to the <a href="#">event terms</a> and code of conduct</label>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Reserve my seat</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>CodeSprint Weekend is organised by student volunteers. Questions? Reach out at <a href="mailto:hello@codesprint.example">hello@codesprint.example</a>.</p>
+      <p class="build-note">μID: REPLACE_WITH_YOUR_MUID</p>
+    </div>
+  </footer>
+
+</body>
+</html>
